@@ -1,0 +1,156 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100&display=swap');
+
+/*Styles all html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Styles html*/
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+/*Styles body*/
+body{
+    background-color:black;
+}
+
+/*Style header*/
+header{
+    margin: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style principal text*/
+h1{
+    font-size: 50px;
+}
+h1:hover{
+    font-size: 60px;
+}
+
+/*Style nav*/
+nav{
+    margin-top: 20px;
+    width: 80%;
+    height: 70px;
+    border: #140626;
+    background-color:#140626;
+    padding: 20px ;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav:hover{
+    background-color: rgb(41, 14, 68);
+}
+
+/*Estilos nav active*/
+nav:active{
+    width: 100%; /*Se agranda barra nav*/
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    background-color:  rgb(41, 14, 68);
+    color:white;
+    border-color: blueviolet;
+
+}
+input:hover{
+    background-color: #140626;
+    font-weight: bolder;
+}
+button{
+    margin-left: 20px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    width: 50px;
+    border-style: none;
+}
+button:hover{
+    background-color: white;
+    border-radius: 10px;
+    width: 50px;
+    border-style: none;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+/*Style div gifs mobile*/
+.cuadroGifs{
+    width: 90%;
+    margin:20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.divImgGif{
+    display: flex;
+    justify-content: space-around;
+}
+.imagenesGif{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+.imagenesGif:hover{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+/*Style div gifs >768px*/
+@media (min-width: 768px) {
+    .cuadroGifs{
+        width: 90%;
+        margin:40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    } 
+    .imagenesGif:hover{
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+}
+/*Style div gifs >992px*/
+@media (min-width: 992px){
+    .cuadroGifs{
+        width: 90%;
+        margin:40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    } 
+    .imagenesGif:hover{
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+}
